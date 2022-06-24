@@ -211,9 +211,9 @@ endif
 
 ifeq (1, $(filter 1,$(GCCVERSIONGTEQ9) $(ISCLANG)))
 ifeq ($(CORE), TSV110)
-CCOMMON_OPT += -march=armv8.2-a -mtune=tsv110
+CCOMMON_OPT += -march=armv8.2-a
 ifneq ($(F_COMPILER), NAG)
-FCOMMON_OPT += -march=armv8.2-a -mtune=tsv110
+FCOMMON_OPT += -march=armv8.2-a
 endif
 endif
 endif
